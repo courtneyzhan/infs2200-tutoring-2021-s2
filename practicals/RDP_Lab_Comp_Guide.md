@@ -1,4 +1,4 @@
-# Welcome to INFS3200/7907
+# Welcome to INFS2200/7903
 ## RDP and Lab Computer Students:
 ## Before class officially starts get these working:
 Services > Start the following services:
