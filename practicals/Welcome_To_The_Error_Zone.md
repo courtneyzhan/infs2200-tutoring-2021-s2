@@ -7,6 +7,14 @@ It's an intermittent error. Try these 3 things:
 ##### Lab/RDP Computers:
 Solution is in the Oracle Setup PDF file on BB under Practicals also the [RDP/Lab PC Set Up Guide](https://raw.githubusercontent.com/courtneyzhan/infs2200-tutoring-2021-s2/master/practicals/RDP_Lab_Comp_Guide.md).
 
+### ORA-01017 - Invalid username/password; logon denied
+Three possibilities:  
+
+1. Typed password incorrectly (remember that you cannot view password as you type it, just type and press "Enter"). SQL Plus closes after 3 failed attempts - if you've forgotten your password you can follow instructions in Oracle Setup on BB to change password.  
+		* Recall that you need to try TWO  passwords for sys as sysdba (`Password1` and `Password1!`)  
+2. Your username is incorrect, check you typed it correctly  
+3. You have not connected to this computer and created your user before (RDP). Follow steps in Oracle Setup on BB to learn how to create your user again.  
+
 ### ORA-01045 - User lacks CREATE SESSION privilege; logon denied
 Login as the admin (sys as sysdba), and grant the privilege to your user, like the following:  
 `GRANT CREATE SESSION TO USERNAME`  
