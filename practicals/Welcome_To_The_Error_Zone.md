@@ -7,6 +7,11 @@ It's an intermittent error. Try these 3 things:
 ##### Lab/RDP Computers:
 Solution is in the Oracle Setup PDF file on BB under Practicals also the [RDP/Lab PC Set Up Guide](https://raw.githubusercontent.com/courtneyzhan/infs2200-tutoring-2021-s2/master/practicals/RDP_Lab_Comp_Guide.md).
 
+### ORA-65096 - Invalid common user or role name
+Happens why you try to execute the CREATE USER command.  
+Need to alter session using the below command first before creating a user.  
+`ALTER SESSION SET "_ORACLE_SCRIPT=TRUE;"`   
+
 ### ORA-01017 - Invalid username/password; logon denied
 Three possibilities:  
 
